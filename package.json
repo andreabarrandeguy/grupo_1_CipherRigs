@@ -1,0 +1,23 @@
+{
+  "name": "grupo_1_cipherrigs",
+  "version": "1.0.0",
+  "description": "Tematica del sitio: Ecommerce de ASIC, Rigs y hardware para minar criptomonedas.\r Publico objetivo: Personas con inversiones grandes y medianas en la criptomineria de Bitcoin y Ethereum.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreabarrandeguy/grupo_1_CipherRigs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreabarrandeguy/grupo_1_CipherRigs/issues"
+  },
+  "homepage": "https://github.com/andreabarrandeguy/grupo_1_CipherRigs#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
