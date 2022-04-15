@@ -60,9 +60,9 @@ nav a:hover {
 {
   display: block;
   position:absolute;
-  top: 25px;
-  right:50px;
-  padding-right: 60px;
+  top: 20px;
+  right: 45px;
+  padding-right: 110px;
   
   z-index: 1;
   
@@ -174,7 +174,8 @@ nav a:hover {
 #menu li
 {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 18px;
+  padding-top: 2px;
 }
 
 
