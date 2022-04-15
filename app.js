@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 const path=require('path');
 
-app.use(express.static('grupo_1_chiperrings'));
+app.use(express.static('views'));
 
 app.get('/', (req, res) => { // homepage
     res.status(200).sendFile(path.join(__dirname, 'views/index.html'));
@@ -24,6 +24,21 @@ app.get('/registro', (req, res) => { // Pagina de registro
     res.status(200).sendFile(path.join(__dirname, 'views/register.html'));
 });
 
-app.listen(3000, ()=> {
-    console.log('Servidor corriendo en el puerto 3000');
+app.get('/nosotros', (req, res) => { // Pagina de registro
+    res.status(200).sendFile(path.join(__dirname, 'views/nosotros.html'));
 });
+
+app.get('/contacto', (req, res) => { // Pagina de registro
+    res.status(200).sendFile(path.join(__dirname, 'views/contacto.html'));
+});
+
+app.get('/asic', (req, res) => { // Pagina de registro
+    res.status(200).sendFile(path.join(__dirname, 'views/asic.html'));
+});
+
+app.get('/rigs', (req, res) => { // Pagina de registro
+     res.status(200).sendFile(path.join(__dirname, 'views/rigs.html'));
+});
+
+app.listen(3000, () => {
+    console.log('Servidor corriendo en el puerto 3000')});
