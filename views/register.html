@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Registro</title>
 <meta charset="utf-8">
-<link href="css/style.css"
+<link href="css/register.css"
       rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<h1>todo</h1>
-    </head>
+</head>
     <body>
-        <header>
+        <style>
+            body {
+              background-image: url('design/Back\ register.jpg');
+            }
+            </style>
+        <header class="header">
+            <div class="logo">
+                <img src="design/cipherlogo.svg" width="130px">
+            </div>
+            <nav class="desktopnav">
+              <div> <a  href="asic.html"> Asic </a> </div>
+              <div> <a  href="rigs.html"> Rigs </a> </div>
+              <div> <a  href="nosotros.html"> Nosotros </a> </div>
+              <div> <a  href="contacto.html"> Contacto </a> </div>
+              <i class="iconos"></i>
+              <div> <a  href="login.html"> <img class="login" src="design/User icon.png" alt=""> </a> </div>
+              <div> <a  href="productCart.html"> <img class="shop" src="design/Shop icon.png" alt=""> </a> </div>
+            </i>
+            </nav>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+        <a href="views/asic.html"><li>Asic</li></a>
+        <a href="views/rigs.html"><li>Rigs</li></a>
+        <a href="views/nosotros.html"><li>Nosotros</li></a>
+        <a href="views/contacto.html"><li>Contacto</li></a>
+        <a href="views/login.html"><li>Cuenta</li></a>
+        <a href="views/productCart.html"><li>Compras</li></a>
+      </ul>
+    </div>
+    </nav>
+</header>
+  </nav>
+        <main class="main">
+            <h1>Crea Tu cuenta</h1>
+            <h2>Es rápido y fácil</h2>
+<form action="register.html" method="get" class="formulario">
+    <label>Nombre</label>
+    <input type="text"  class="control" name="nombre" placeholder="Ingrese su Nombre">
+    <label>Apellido</label>
+    <input type="text" class="control" name="apellido" placeholder="Ingrese su Apellido">
+    <label>Email</label>
+    <input type="email" class="control" name="email" placeholder="Ingrese su Email">
+    <label>Contraseña</label>
+    <input type="password" class="control" name="contraseña" placeholder="Ingrese su Constraseña">
+    <div><button type="submit" class="botons2" href="/views/register.html">Crear Cuenta</button>
+    <p>o</p>
+    <button class="botons1" type="submit" href="/views/login.html">Ingresar</button></div>
 
-        </header>
-        <main>
+</form> 
 
         </main>
         <footer>

@@ -1,7 +1,81 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+main{
+width: 100%;
+  }
+  .control{
+      height: 35px;
+      width: 400px;
+      border-radius: 20px;
+      color:white;
+background-color: rgba(67,63,62,0.9)
+  }
+  .botons1{
+      width: 200px;
+      border-radius: 20px;
+      height: 35px;
+      color: white;
+      background-color: rgba(67,63,62,0.9);  
+  }
+  p{
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding-top:5%;
+      padding-bottom:5%;
+  }
+  .botons2{
+    width: 200px;
+    color: white;
+    border-radius: 20px;
+    border:1px solid rgba(0,0,0,0.4) ;
+    height: 35px;
+    background-color: rgba(0,0,0,0.8);
+    margin-top:40px
+}
+  h1{
+    text-align: center;
+    color: white;
+margin-top: 100px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    
+  }
 
+    .formulario{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      a{
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding-left: 0px;
+      }
+      
+      input{
+        background-color:rgba(68,62,60,0.5);
+        color: white;
+        font-size: 18px;
+        text-align: center;
+      }
+      label{
+          
+        color: white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 20px;
+        }
 body{
     background-size: cover ;
-    backdrop-filter: brightness(60%) contrast(130%) blur(1px);
+    font-family: Didact Gothic;
+    backdrop-filter: brightness(0.9);
     height: 100vh;
     width: 100%;
     margin: 0%;
@@ -180,24 +254,37 @@ nav a:hover {
 
 
 
-input{
-  background-color:rgba(68,62,60,0.5);
-  color: white;
-}
-label{
-  text-align: left;
-}
+
 
 #menuToggle input:checked ~ ul
 {
-  transform: none;
-}
-@media screen and (max-width: 900px) {
-.desktopnav {display: none;}
-.logo {width: 100px}
-}
+  transform: none;}
 
-@media screen and (min-width: 1000px) {
-    #menuToggle {display: none};
-    #menu {display: none};
-}
+  @media(max-width:480px){
+    h1{
+     padding-top: 0;
+     padding-bottom: 0;
+    }
+        .control{ 
+          margin: 0;
+        width:80vw;
+        border-radius: 20px;
+        color: white;
+        background-color: rgba(67,63,62,0.9);
+        }
+      }
+
+@media screen and (max-width: 900px) {
+    .desktopnav {display: none;}
+    .logo {width: 100px}
+    }
+    main{
+        width: stretch
+        ;
+    }
+    
+    @media screen and (min-width: 901px) {
+        #menuToggle {display: none};
+        #menu {display: none};
+    }
+    
