@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html>
     <head>
-<meta charset="utf-8">
-<link href="css/style.css"
-      rel="stylesheet" type="text/css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<h1>estas</h1>
+        <meta charset="utf-8">
+        <link href="css/cart.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/858b52eeaa.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <header>
 
+    <body>
+        <style>
+            body {
+              background-image: url('design/Back\ -\ shop.jpg');
+            }
+            </style>
+        <header class="header">
+            <div class="logo">
+                <img src="design/cipherlogo.svg" width="130px">
+            </div>
+            <nav class="desktopnav">
+              <div> <a  href="asic.html"> Asic </a> </div>
+              <div> <a  href="rigs.html"> Rigs </a> </div>
+              <div> <a  href="nosotros.html"> Nosotros </a> </div>
+              <div> <a  href="contacto.html"> Contacto </a> </div>
+              <i class="iconos"></i>
+              <div> <a  href="login.html"> <img class="login" src="design/User icon.png" alt=""> </a> </div>
+              <div> <a  href="productCart.html"> <img class="shop" src="design/Shop icon.png" alt=""> </a> </div>
+            </i>
+            </nav>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+        <a href="views/asic.html"><li>Asic</li></a>
+        <a href="views/rigs.html"><li>Rigs</li></a>
+        <a href="views/nosotros.html"><li>Nosotros</li></a>
+        <a href="views/contacto.html"><li>Contacto</li></a>
+        <a href="views/login.html"><li>Cuenta</li></a>
+        <a href="views/productCart.html"><li>Compras</li></a>
+      </ul>
+    </div>
+  </nav>
         </header>
         <main>
+            <h1>Realizar compra</h1>
 
+            <section class="carrito">
+                <article class="articulos">
+                    <div>Imagen</div>
+                    <div>Producto</div>
+                    <div>Precio</div>
+                    <div>Cantidad</div>
+                    <div>Sub total</div>
+                    <div>Eliminar</div>
+                </article> 
+
+                <article class="articulos">
+                    <div><img src="design/bitcoin-miner-s19-xp.png" alt="xp" style="width: 10vw"></div>
+                    <div>Bitcoin Miner S19 XP Hyd.</div>
+                    <div>$11.000</div>
+                    <div class="sombreado">1</div>
+                    <div>$11.000</div>
+                    <div style="font-size: 40px"><i class="fa-solid fa-rectangle-xmark"></i></div>
+                </article>    
+                <br>
+                <article class="articulos">
+                    <div><img src="design/bitcoin-miner-s19.png" alt="xp" style="width: 8vw"></div>
+                    <div>Bitcoin Miner S19j Pro</div>
+                    <div>$14.000</div>
+                    <div class="sombreado">2</div>
+                    <div>$28.000</div>
+                    <div style="font-size: 40px"><i class="fa-solid fa-rectangle-xmark"></i></div>
+                </article>
+                <br>
+            </section>
+
+            <section>
+                <div class="total"><p>Sub total</p><p>$39.000</p></div>
+                <div class="total"><p>Impuestos</p><p>$11.700</p></div>
+                <div class="total"><p>Total</p><p>$50.700</p></div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <section class="comprar">
+                <div><button type="submit">Volver</button></div>
+                <div><button type="submit">Comprar</button></div>
+            </section>
+            
         </main>
         <footer>
 
