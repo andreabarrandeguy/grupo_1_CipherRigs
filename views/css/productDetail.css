@@ -1,12 +1,124 @@
 *{
-  margin: 0;
-  padding: 0%;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+main{
+    width: 100%;
+    height: auto;
+}
+
+.Productos {
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+
+  }
+  
+  img{
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .imagenProducto {
+    height: 45%;
+    width: 45%;
+    max-height: 350px;
+    max-width: 350px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  
+  }
+
+.textoProductos{
+    height: 45%;
+    width: 55%;
+    max-height: 420px;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    background-color: rgba(50, 50, 50, 0.5);
+    flex-wrap: wrap;
+
+}
+
+.botonCompra{
+    border-radius: 30px;
+    min-width: auto;
+    min-height: auto;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.661);
+    color: #fff;
+}
+
+h1{
+  font-size: 2.2vw;
+}
+
+
+h2{
+  font-size: 1.7vw;
+}
+
+h3{
+  font-size: 1.3vw;
+}
+
+.barraProductos{
+    height: 45%;
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.imagenesBarraProductos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 200px;
+  width: 300px;
+  background-color: rgba(50, 50, 50, 0.705);
+  border-radius: 30px;
+
+}
+
+
+  
+
+.flechaIzqProductos{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.flechaDerProductos{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 body{
     background-size: cover ;
-    backdrop-filter: brightness(60%) contrast(130%) blur(1px);
+    font-family: Didact Gothic;
+    backdrop-filter: brightness(60%) contrast(120%) blur(2px);
     height: 100vh;
     width: 100%;
     margin: 0%;
@@ -60,12 +172,6 @@ nav a:hover {
     justify-content: right;
   align-content: flex-start;
   
-}
-
-.linkProductDetail{
-  display: flex;
-  justify-content: center;
-  background-color: rgba(206, 202, 202, 0.51);
 }
 
 #menuToggle
