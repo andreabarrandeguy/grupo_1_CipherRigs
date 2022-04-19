@@ -20,7 +20,7 @@ app.get('/loguearse', (req, res) => { // Pagina de logeo
     res.status(200).sendFile(path.join(__dirname, 'views/login.html'));
 });
 
-app.get('/registro', (req, res) => { // Pagina de registro
+app.get('/register', (req, res) => { // Pagina de registro
     res.status(200).sendFile(path.join(__dirname, 'views/register.html'));
 });
 
