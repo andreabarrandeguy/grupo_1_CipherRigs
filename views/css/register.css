@@ -131,8 +131,8 @@ nav a:hover {
   display: block;
   position:absolute;
   top: 20px;
-  right: 45px;
-  padding-right: 110px;
+  right: -60px;
+  padding-right: 100px;
   
   z-index: 1;
   
@@ -248,6 +248,11 @@ nav a:hover {
   padding-top: 2px;
 }
 
+.desktopnav {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30%;
+}
 
 
 

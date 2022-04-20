@@ -1,12 +1,130 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+main{
+    width: 100%;
+    height: auto;
+}
+
+.Productos {
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+
+  }
+  
+  img{
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .imagenProducto {
+    height: 30%;
+    width: 30%;
+    max-height: 300px;
+    max-width: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  
+  }
+
+.textoProductos{
+    height: 45%;
+    width: 55%;
+    max-height: 420px;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    background-color: rgba(50, 50, 50, 0.5);
+    flex-wrap: wrap;
+
+}
+
+.botonCompra{
+    border-radius: 30px;
+    min-width: auto;
+    min-height: auto;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.661);
+    color: #fff;
+}
+
+h1{
+  font-size: 2.2vw;
+}
+
+
+h2{
+  font-size: 1.7vw;
+}
+
+h3{
+  font-size: 1.3vw;
+}
+
+.barraProductos{
+    height: 45%;
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.imagenesBarraProductos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 150px;
+  width: 300px;
+  background-color: rgba(50, 50, 50, 0.705);
+  border-radius: 30px;
+
+}
+
+
+  
+
+.flechaIzqProductos{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.flechaDerProductos{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 body{
     background-size: cover ;
-    backdrop-filter: brightness(80%) contrast(130%) blur(2px);
+    font-family: Didact Gothic;
+    backdrop-filter: brightness(60%) contrast(120%) blur(2px);
     height: 100vh;
     width: 100%;
     margin: 0%;
-    font-family: Didact Gothic;
 }
 nav{
+  
     font-family: Didact Gothic;
     color: white;
     font-size: 14px;
@@ -14,6 +132,7 @@ nav{
     margin-top: auto;
 }
 nav a{
+  
     color:white;
     text-decoration: none;
     padding: 1em;
@@ -47,9 +166,10 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    align-content: flex-start;
+  align-content: flex-start;
   
 }
+
 #menuToggle
 {
   display: block;
@@ -178,6 +298,7 @@ nav a:hover {
   margin-right: 30%;
 }
 
+
 input{
   background-color:rgba(68,62,60,0.5);
   color: white;
@@ -198,66 +319,4 @@ label{
 @media screen and (min-width: 1000px) {
     #menuToggle {display: none};
     #menu {display: none};
-}
-
-/*Lo que agregue yo*/
-
-/*Se lo copie a Eduardo pero cambie margin y padding TOP*/
-h1{
-  text-align: center;
-  color: white;
-  margin-top: 0px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.carrito {
-  border-bottom: solid white 1px;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-.articulos {
-  margin-left: 10%;
-  margin-right: 10%;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.articulos div {
-  width: 16vw;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-}
-
-.sombreado {
-  border-radius: 50px;
-  background-color: RGBA(0,0,0,0.5);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.total {
-  color: white;
-  display: flex;
-  height: 30px;
-  flex-direction: row;
-  margin-left: 53%;
-  margin-right: 35%;
-  justify-content: space-between;
-}
-
-.comprar {
-  margin-left: 15%;
-  margin-right: 15%;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
