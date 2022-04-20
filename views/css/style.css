@@ -6,15 +6,12 @@
 
 body{
     background-size: cover ;
-    backdrop-filter: brightness(60%) contrast(130%) blur(1px);
+    backdrop-filter: brightness(60%) contrast(140%) blur(2px);
     height: 100vh;
     width: 100%;
     margin: 0%;
 }
 nav{
-    display: flex;
-    flex-direction:row;
-    justify-items: space-evenly;
     font-family: Didact Gothic;
     color: white;
     font-size: 14px;
@@ -22,9 +19,6 @@ nav{
     margin-top: auto;
 }
 nav a{
-    display: flex;
-    flex-direction:row;
-    justify-items: space-evenly;
     color:white;
     text-decoration: none;
     padding: 1em;
@@ -37,12 +31,11 @@ nav a:hover {
 .header{ 
     display: flex;
     flex-direction:row;
+    align-items: flex-start;
     justify-content: center;
     margin-left: 15px;
 }
 .logo{
-    display: flex;
-    flex-direction: row;
     margin-right: auto;
     margin-top: 16px;
 
@@ -73,8 +66,8 @@ nav a:hover {
   display: block;
   position:absolute;
   top: 20px;
-  right: 45px;
-  padding-right: 110px;
+  right: -60px;
+  padding-right: 100px;
   
   z-index: 1;
   
@@ -204,6 +197,12 @@ label{
 {
   transform: none;
 }
+  .desktopnav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30%;
+}
+
 @media screen and (max-width: 900px) {
 .desktopnav {display: none;}
 .logo {width: 100px}
@@ -212,4 +211,117 @@ label{
 @media screen and (min-width: 1000px) {
     #menuToggle {display: none};
     #menu {display: none};
+}
+
+
+.descripcion{
+  display: flex;
+  flex-direction: column;
+  font-family: Didact Gothic;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 140px;
+
+
+}
+.Productos {
+  font-family: Didact Gothic;
+  color: white;
+  font-size: medium;
+  margin-bottom: 20%;
+  height: 30%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: stretch;
+  margin: auto;
+  align-items: center;
+  margin-top: 80px;;
+}
+.Productos .article{
+  align-items: center;
+  align-self: stretch;
+  font-size: xx-large;
+}
+.article{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.imagenProducto {
+  height: 30%;
+  width: 30%;
+  max-height: 300px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-left: 40%;
+  margin-top: 5%;
+
+
+
+}
+
+.textoProductos{
+  height: 45%;
+  width: 55%;
+  max-height: 420px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  background-color: rgba(50, 50, 50, 0.5);
+  flex-wrap: wrap;
+
+}
+
+.barraProductos{
+  height: 45%;
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 8%;
+}
+
+.imagenesBarraProductos {
+display: flex;
+text-align: center;
+justify-content: center;
+height: 150px;
+width: 300px;
+background-color: rgba(50, 50, 50, 0.705);
+border-radius: 30px;
+
+}
+
+
+.flechaIzqProductos{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.flechaDerProductos{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }

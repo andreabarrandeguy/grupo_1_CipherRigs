@@ -27,10 +27,10 @@ main{
   }
 
   .imagenProducto {
-    height: 45%;
-    width: 45%;
-    max-height: 350px;
-    max-width: 350px;
+    height: 30%;
+    width: 30%;
+    max-height: 300px;
+    max-width: 300px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -89,7 +89,7 @@ h3{
   display: flex;
   text-align: center;
   justify-content: center;
-  height: 200px;
+  height: 150px;
   width: 300px;
   background-color: rgba(50, 50, 50, 0.705);
   border-radius: 30px;
@@ -124,9 +124,7 @@ body{
     margin: 0%;
 }
 nav{
-    display: flex;
-    flex-direction:row;
-    justify-items: space-evenly;
+  
     font-family: Didact Gothic;
     color: white;
     font-size: 14px;
@@ -134,9 +132,7 @@ nav{
     margin-top: auto;
 }
 nav a{
-    display: flex;
-    flex-direction:row;
-    justify-items: space-evenly;
+  
     color:white;
     text-decoration: none;
     padding: 1em;
@@ -179,8 +175,8 @@ nav a:hover {
   display: block;
   position:absolute;
   top: 20px;
-  right: 45px;
-  padding-right: 110px;
+  right: -60px;
+  padding-right: 100px;
   
   z-index: 1;
   
@@ -296,6 +292,11 @@ nav a:hover {
   padding-top: 2px;
 }
 
+.desktopnav {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30%;
+}
 
 
 input{
