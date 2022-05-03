@@ -261,3 +261,53 @@ h1{
   flex-direction: row;
   justify-content: space-around;
 }
+
+/*Mobile*/
+@media (max-width: 360px) {
+  .carrito {
+    margin-left: 0px;
+    margin-right: 0px;}
+  .articulos{
+    margin-left: 10px;
+    margin-right: 0px;
+    font-size: 10px;
+  }
+  .cantidades{
+    width: 50px;
+  }
+  .total {
+    font-size: 12px;
+    margin-right: 70px;
+  }
+  .eliminar {font-size: 30px;}
+}
+
+/*Tablet*/
+@media (min-width: 361px) {
+  .carrito {
+    width: 65vw;
+    margin-left: 20px;}
+  .articulos{
+    margin-left: 10px;
+    margin-right: 0px;
+    font-size: 10px;
+  }
+  .cantidades{
+    width: 50px;
+  }
+  .total {
+    font-size: 12px;
+    margin-left: 280px;
+    width: 130px;
+  }
+  .eliminar {font-size: 30px;}
+  .comprar{
+    margin-left: 0px;
+    margin-right: 30%;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 769px) {
+  .eliminar {font-size: 40px}
+}
