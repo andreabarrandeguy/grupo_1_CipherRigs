@@ -1,12 +1,87 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+main{
+width: 100%;
+  }
+  .control{
+      height: 35px;
+      width: 400px;
+      border-radius: 20px;
+      color:white;
+background-color: rgba(67,63,62,0.9)
+  }
+  .botons1{
+      width: 200px;
+      border-radius: 20px;
+      height: 35px;
+      color: white;
+      background-color: rgba(67,63,62,0.9);  
+  }
+  p{
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding-top:5%;
+      padding-bottom:5%;
+  }
+  .botons2{
+    width: 200px;
+    color: white;
+    border-radius: 20px;
+    border:1px solid rgba(0,0,0,0.4) ;
+    height: 35px;
+    background-color: rgba(0,0,0,0.8);
+    margin-top:40px
+}
+  h1{
+    text-align: center;
+    color: white;
+margin-top: 100px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    
+  }
+
+    .formulario{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding-left: 0px;
+      }
+      
+      input{
+        background-color:rgba(68,62,60,0.5);
+        color: white;
+        font-size: 16px;
+        text-align: center;
+      }
+      label{
+          
+        color: white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 20px;
+        }
 body{
     background-size: cover ;
-    backdrop-filter: brightness(80%) contrast(130%) blur(2px);
+    font-family: Didact Gothic;
     height: 100vh;
     width: 100%;
     margin: 0%;
-    font-family: Didact Gothic;
+
+
 }
 nav{
+    
     font-family: Didact Gothic;
     color: white;
     font-size: 14px;
@@ -14,6 +89,7 @@ nav{
     margin-top: auto;
 }
 nav a{
+
     color:white;
     text-decoration: none;
     padding: 1em;
@@ -26,7 +102,6 @@ nav a:hover {
 .header{ 
     display: flex;
     flex-direction:row;
-    justify-content: center;
     margin-left: 15px;
 }
 .logo{
@@ -47,7 +122,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    align-content: flex-start;
+  align-content: flex-start;
   
 }
 #menuToggle
@@ -178,136 +253,37 @@ nav a:hover {
   margin-right: 30%;
 }
 
-input{
-  background-color:rgba(68,62,60,0.5);
-  color: white;
-}
-label{
-  text-align: left;
-}
+
 
 #menuToggle input:checked ~ ul
 {
-  transform: none;
-}
+  transform: none;}
+
+  @media(max-width:480px){
+    h1{
+     padding-top: 0;
+     padding-bottom: 0;
+    }
+        .control{ 
+          margin: 0;
+        width:80vw;
+        border-radius: 20px;
+        color: white;
+        background-color: rgba(67,63,62,0.9);
+        }
+      }
+
 @media screen and (max-width: 900px) {
-.desktopnav {display: none;}
-.logo {width: 100px}
-}
-
-@media screen and (min-width: 1000px) {
-    #menuToggle {display: none};
-    #menu {display: none};
-}
-
-/*Lo que agregue yo*/
-
-/*Se lo copie a Eduardo pero cambie margin y padding TOP*/
-h1{
-  text-align: center;
-  color: white;
-  margin-top: 0px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.carrito {
-  border-bottom: solid white 1px;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-.articulos {
-  margin-left: 10%;
-  margin-right: 10%;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.articulos div {
-  width: 16vw;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-}
-
-.sombreado {
-  border-radius: 50px;
-  background-color: RGBA(0,0,0,0.5);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.total {
-  color: white;
-  display: flex;
-  height: 30px;
-  flex-direction: row;
-  margin-left: 53%;
-  margin-right: 35%;
-  justify-content: space-between;
-}
-
-.comprar {
-  margin-left: 15%;
-  margin-right: 15%;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-/*Mobile*/
-@media (max-width: 360px) {
-  .carrito {
-    margin-left: 0px;
-    margin-right: 0px;}
-  .articulos{
-    margin-left: 10px;
-    margin-right: 0px;
-    font-size: 10px;
-  }
-  .cantidades{
-    width: 50px;
-  }
-  .total {
-    font-size: 12px;
-    margin-right: 70px;
-  }
-  .eliminar {font-size: 30px;}
-}
-
-/*Tablet*/
-@media (min-width: 361px) {
-  .carrito {
-    width: 65vw;
-    margin-left: 20px;}
-  .articulos{
-    margin-left: 10px;
-    margin-right: 0px;
-    font-size: 10px;
-  }
-  .cantidades{
-    width: 50px;
-  }
-  .total {
-    font-size: 12px;
-    margin-left: 280px;
-    width: 130px;
-  }
-  .eliminar {font-size: 30px;}
-  .comprar{
-    margin-left: 0px;
-    margin-right: 30%;
-  }
-}
-
-/*Desktop*/
-@media (min-width: 769px) {
-  .eliminar {font-size: 40px}
-}
+    .desktopnav {display: none;}
+    .logo {width: 100px}
+    }
+    main{
+        width: stretch
+        ;
+    }
+    
+    @media screen and (min-width: 901px) {
+        #menuToggle {display: none};
+        #menu {display: none};
+    }
+    
