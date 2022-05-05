@@ -5,42 +5,26 @@ const path=require('path');
 app.use(express.static('public'));
 app.use(express.static('views'));
 
+app.set("view engine", "ejs");
 
-app.get('/', (req, res) => { // homepage
-    res.status(200).sendFile(path.join(__dirname, '/src/views/index.html'));
-});
+//Rutas
+const index = require('./src/routes/main');
+const nosotros = require('./src/routes/main');
+const contacto = require('./src/routes/main');
+const productos = require('./src/routes/main');
+const users = require('./src/routes/main');
 
-app.get('/productos', (req, res) => { // Pagina de productos
-    res.status(200).sendFile(path.join(__dirname, '/src/views/products/productDetail.html'));
-});
+app.use('/', index); //localhost3000
+app.use('/nosotros', nosotros); //localhost3000/nosotros
+app.use('/contacto', contacto); //localhost3000/contacto
 
-app.get('/carrito', (req, res) => { // Pagina del carro
-    res.status(200).sendFile(path.join(__dirname, '/src/views/products/productCart.html'));
-});
+app.use('/productos', productos); //localhost3000/productos
+app.use('/carrito', productos); //localhost3000/carrito
+app.use('/asic', productos); //localhost3000/asic
+app.use('/rigs', productos); //localhost3000/rigs
 
-app.get('/loguearse', (req, res) => { // Pagina de logeo
-    res.status(200).sendFile(path.join(__dirname, '/src/views/users/login.html'));
-});
-
-app.get('/register', (req, res) => { // Pagina de registro
-    res.status(200).sendFile(path.join(__dirname, '/src/views/users/register.html'));
-});
-
-app.get('/nosotros', (req, res) => { // Pagina de registro
-    res.status(200).sendFile(path.join(__dirname, '/src/views/nosotros.html'));
-});
-
-app.get('/contacto', (req, res) => { // Pagina de registro
-    res.status(200).sendFile(path.join(__dirname, '/src/views/contacto.html'));
-});
-
-app.get('/asic', (req, res) => { // Pagina de registro
-    res.status(200).sendFile(path.join(__dirname, 'src/views/products/asic.html'));
-});
-
-app.get('/rigs', (req, res) => { // Pagina de registro
-     res.status(200).sendFile(path.join(__dirname, '/src/views/products/rigs.html'));
-});
+app.use('/loguearse', users); //localhost3000/loguearse
+app.use('/register', users); //localhost3000/register
 
 app.listen(3000, () => {
     console.log('Servidor corriendo en el puerto 3000')});
