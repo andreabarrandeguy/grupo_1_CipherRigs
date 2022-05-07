@@ -1,76 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Registro</title>
-<meta charset="utf-8">
-<link href="css/register.css"
-      rel="stylesheet" type="text/css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <title>Registro</title>
+  <meta charset="utf-8">
+  <%- include ('../partials/head') %>
 </head>
-    <body>
-        <style>
-            body {
-              background-image: url('/img/Back\ register.jpg');
-            }
-            </style>
-        <header class="header">
-            <div class="logo">
-              <a href="http://localhost:3000/">
-              <img src="/img/CIPHER.png"width="160px">
-              </a>
-            </div>
-            <nav class="desktopnav">
-              <div> <a  href="/asic"> Asic </a> </div>
-              <div> <a  href="/rigs"> Rigs </a> </div>
-              <div> <a  href="/nosotros"> Nosotros </a> </div>
-              <div> <a  href="/contacto"> Contacto </a> </div>
-              <i class="iconos"></i>
-              <div> <a  href="/loguearse"> <img class="login" src="/img/User icon.png" alt=""> </a> </div>
-              <div> <a  href="/carrito"> <img class="shop" src="/img/Shop icon.png" alt=""> </a> </div>
-            </i>
-            </nav>
-            <nav role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-        <a href="/asic"><li>Asic</li></a>
-        <a href="/rigs"><li>Rigs</li></a>
-        <a href="/nosotros"><li>Nosotros</li></a>
-        <a href="/contacto"><li>Contacto</li></a>
-        <a href="/loguearse"><li>Cuenta</li></a>
-        <a href="/carrito"><li>Compras</li></a>
-      </ul>
-    </div>
-    </nav>
-</header>
+
+<body>
+  <style>
+    body {
+      background-image: url('/img/Back\ register.jpg');
+    }
+  </style>
+  <%- include ('../partials/header') %>
   </nav>
-        <main class="main">
-            <h1>Crea Tu cuenta</h1>
-            <h2>Es rápido y fácil</h2>
-<form action="register.html" method="get" class="formulario">
-    <label>Nombre</label>
-    <input type="text"  class="control" name="nombre" placeholder="Ingrese su Nombre">
-    <label>Apellido</label>
-    <input type="text" class="control" name="apellido" placeholder="Ingrese su Apellido">
-    <label>Email</label>
-    <input type="email" class="control" name="email" placeholder="Ingrese su Email">
-    <label>Contraseña</label>
-    <input type="password" class="control" name="contraseña" placeholder="Ingrese su Constraseña">
-    <div><button type="submit" class="botons2" href="/views/users/register.html">Crear Cuenta</button>
-    <p>o</p>
-    <button class="botons1" type="submit" href="/views/users/login.html">Ingresar</button></div>
+  <main class="main">
+    <h1>Crea Tu cuenta</h1>
+    <h2>Es rápido y fácil</h2>
+    <form action="register.html" method="get" class="formulario">
+      <label>Nombre</label>
+      <input type="text" class="control" name="nombre" placeholder="Ingrese su Nombre">
+      <label>Apellido</label>
+      <input type="text" class="control" name="apellido" placeholder="Ingrese su Apellido">
+      <label>Email</label>
+      <input type="email" class="control" name="email" placeholder="Ingrese su Email">
+      <label>Contraseña</label>
+      <input type="password" class="control" name="contraseña" placeholder="Ingrese su Constraseña">
+      <div><button type="submit" class="botons2" href="/views/users/register.html">Crear Cuenta</button>
+        <p class="parrafo">o</p>
+        <button class="botons1" type="submit" href="/views/users/login.html">Ingresar</button>
+      </div>
 
-</form> 
+    </form>
 
-        </main>
-        <footer>
+  </main>
+  <footer>
 
-        </footer>
-    </body>
+  </footer>
+</body>
+
 </html>

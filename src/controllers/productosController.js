@@ -1,6 +1,6 @@
 const controller = {
     detalle: (req, res) => {
-        return res.render('./products/productDetail'); 
+        return res.render('./products/productDetail');
     },
     carrito: (req, res) => {
         return res.render('./products/productCart');

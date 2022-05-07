@@ -1,71 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Logueo</title>
-<meta charset="utf-8">
-<link href="css/login.css"
-      rel="stylesheet" type="text/css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <title>Login</title>
+  <%- include ('../partials/head') %>
 </head>
-    <body>
-        <style>
-            body {
-              background-image: url('img/Back\ sesión.jpg');
-            }
-            </style>
-        <header class="header">
-            <div class="logo">
-              <a href="http://localhost:3000/">
-              <img src="img/CIPHER.png"width="160px">
-              </a>
-            </div>
-            <nav class="desktopnav">
-              <div> <a  href="/asic"> Asic </a> </div>
-              <div> <a  href="/rigs"> Rigs </a> </div>
-              <div> <a  href="/nosotros"> Nosotros </a> </div>
-              <div> <a  href="/contacto"> Contacto </a> </div>
-              <i class="iconos"></i>
-              <div> <a  href="/loguearse"> <img class="login" src="img/User icon.png" alt=""> </a> </div>
-              <div> <a  href="/carrito"> <img class="shop" src="img/Shop icon.png" alt=""> </a> </div>
-            </i>
-            </nav>
-            <nav role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-        <a href="/asic"><li>Asic</li></a>
-        <a href="/rigs"><li>Rigs</li></a>
-        <a href="/nosotros"><li>Nosotros</li></a>
-        <a href="/contacto"><li>Contacto</li></a>
-        <a href="/loguearse"><li>Cuenta</li></a>
-        <a href="/carrito"><li>Compras</li></a>
-      </ul>
-    </div>
-  </nav>
-  </header>
-        <main>
-          <h1>Iniciar sesión</h1>
-          
-<form action="register.html" method="post" class="formulario">
-  <label>Email</label>
-  <input type="text"  class="control" name="nombre" placeholder="Ingrese su Email">
-  <label>Constraseña</label>
-  <input type="password" class="control" name="apellido" placeholder="Ingrese su Constraseña">
-  <div><button type="submit" class="botons2" href="/views/register.html">Siguiente</button>
-  <p></p><a href="#">¿Olvidaste tu contraseña?</a></p>  
-  <p>o</p>
-  <button class="botons1" type="submit" href=>Crear Cuenta</button></div>
 
-</form> 
-        </main>
-        <footer>
+<body>
+  <style>
+    body {
+      background-image: url('img/Back\ sesión.jpg');
+    }
+  </style>
+  <%- include ('../partials/header') %>
+  <main>
+    <h1>Iniciar sesión</h1>
 
-        </footer>
-    </body>
+    <form action="" method="" class="formulario">
+      <label>Email</label>
+      <input type="text" class="control" name="nombre" placeholder="Ingrese su Email">
+      <label>Constraseña</label>
+      <input type="password" class="control" name="apellido" placeholder="Ingrese su Constraseña">
+      <div><button type="submit" class="botons2" href="/views/register.html">Siguiente</button>
+        <p class="parrafo"><a href="#">¿Olvidaste tu contraseña?</a></p>
+        <p class="parrafo">o</p>
+        <button class="botons1" action='register' type="submit"><a href="register">Crear Cuenta</a></button>
+      </div>
+
+    </form>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
 </html>
