@@ -283,7 +283,7 @@ label {
 
 @media(max-width:480px) {
   h1 {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 0;
   }
   h2{
@@ -311,6 +311,15 @@ input{
   font-size: 18px;
   text-align: center;
 }
+/*PorductEdit Styles*/
+.control1{
+  margin:0;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(67, 63, 62, 0.9);
+  height: 10vh;
+}
+
 /* Media Queris */
 @media screen and (max-width: 900px) {
   .desktopnav {

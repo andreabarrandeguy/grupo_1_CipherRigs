@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product Editor</title>
+    <%- include('../partials/head') %>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('img/Back sesión.jpg');
+        }
+    </style>
+
+    <%- include ('../partials/header') %>
+
+    <h1>Vender</h1>
+
+    <form action="productEdit" method="post" class="formulario">
+        <label for="">Imagen</label>
+        <input type="file" name="imagen" accept=".png,.jpg" >
+
+        <label for="titulo">Titulo</label>
+        <input type="text" name="titulo" placeholder="Titulo" class="control">
+
+        <label for="precio">Precio</label>
+        <input type="text" name="precio" placeholder="$" class="control">
+
+        <label for="especificaciones">Especificaciones</label>
+        <textarea name="especificaciones" class="control control1"></textarea>
+
+        <label for="funcion">Función</label>
+        <textarea name="funcion" class="control control1"></textarea>
+
+        
+
+        <button type="submit" class="botons2">Publicar</button>
+    </form>
+
+</body>
+
+</html>

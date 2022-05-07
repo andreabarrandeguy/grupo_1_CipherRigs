@@ -10,6 +10,9 @@ const controller = {
     },
     rigs: (req, res) => {
         return res.render('./products/rigs');
+    },
+   editCreateProdruct: (req, res) => {
+        return res.render('./products/productEdit');
     }
 };
 
