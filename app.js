@@ -4,7 +4,8 @@ const path = require('path');
 
 app.use(express.static('public'));
 app.use(express.static('views'));
-
+app.use(express.urlencoded({extended :false}));
+app.use(express.json());
 app.set("view engine", "ejs");
 
 //Rutas
@@ -25,6 +26,10 @@ app.use('/rigs', productos); //localhost3000/rigs
 
 app.use('/login', users); //localhost3000/loguearse
 app.use('/register', users); //localhost3000/register
+
+app.use((req,res,next)=>{
+    res.status(404).render('not-found')
+})
 
 app.listen(3000, () => {
     console.log('Servidor corriendo en el puerto 3000')
